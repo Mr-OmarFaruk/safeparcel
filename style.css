@@ -1,0 +1,68 @@
+:root {
+  --safe-navy: #12355b;
+  --safe-teal: #0f8b8d;
+  --safe-ink: #182230;
+  --safe-soft: #f4f8fb;
+}
+
+body {
+  background: var(--safe-soft);
+  color: var(--safe-ink);
+}
+
+.bg-primary {
+  background: linear-gradient(90deg, var(--safe-navy), var(--safe-teal)) !important;
+}
+
+.hero {
+  background:
+    linear-gradient(120deg, rgba(18, 53, 91, .94), rgba(15, 139, 141, .86)),
+    url('https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&fit=crop&w=1600&q=80') center/cover;
+  color: #fff;
+  min-height: 560px;
+  display: flex;
+  align-items: center;
+}
+
+.metric-card,
+.content-card,
+.parcel-card {
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgba(18, 53, 91, .08);
+}
+
+.metric-card {
+  min-height: 128px;
+}
+
+.section-pad {
+  padding: 64px 0;
+}
+
+.form-label {
+  font-weight: 600;
+}
+
+.table thead th {
+  white-space: nowrap;
+}
+
+.status-pill {
+  border-radius: 999px;
+  padding: .35rem .7rem;
+  font-size: .82rem;
+  font-weight: 700;
+}
+
+.status-Booked { background: #e7f1ff; color: #084298; }
+.status-In-Transit { background: #fff3cd; color: #664d03; }
+.status-Out-for-Delivery { background: #cff4fc; color: #055160; }
+.status-Delivered { background: #d1e7dd; color: #0f5132; }
+.status-Cancelled { background: #f8d7da; color: #842029; }
+
+.track-panel {
+  margin-top: -80px;
+  position: relative;
+  z-index: 2;
+}
